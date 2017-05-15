@@ -1,0 +1,26 @@
+<h3>Update a Plane</h3>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <input type="text" name="manufacturer" ng-model="planeInfo.manufacturer">
+                <label class="active" for="manufacturer">Manufacturer:</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <input type="text" name="model" ng-model="planeInfo.model">
+                <label class="active" for="model">Model:</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <input type="text" name="engines" ng-model="planeInfo.engines">
+                <label class="active" for="engines">Engines:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" name="image" ng-model="planeInfo.image">
+                <label class="active" for="image">Image Url:</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" ng-click="updateDetails()">Update</button>
+    </form>
+</div>

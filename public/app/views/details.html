@@ -1,0 +1,7 @@
+<h1>Details on the {{ plane.manufacturer }} {{ plane.model }}</h1>
+<a href="/">&#8592; Back</a>
+<div>
+    <img src="{{ plane.image }}" alt="{{ plane.manufacturer }} {{ plane.model }}">
+</div>
+<p>This plane has {{ plane.engines }} engines</p>
+<a ng-href="/plane/update/{{ plane._id }}">Update Info</a>

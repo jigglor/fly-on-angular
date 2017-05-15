@@ -1,0 +1,24 @@
+img {
+    max-height: 200px;
+    max-width: 90%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    border: 2px solid black;
+    width: 33%;
+    padding: .5em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image {
+    margin-top: 1em;
+    text-align: center;
+}

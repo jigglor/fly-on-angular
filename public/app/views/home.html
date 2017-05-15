@@ -1,0 +1,24 @@
+<h1>Airplanes:</h1>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" name="search" ng-model="searchTerm">
+                <label for="search">Search Planes</label>
+            </div>
+        </div>
+    </form>
+</div>
+<a href="/new">Add a New Plane</a>
+<div class="flex">
+    <div ng-repeat="plane in planes | filter: searchTerm" class="box center-align">
+        <div>
+            <h3>{{ plane.manufacturer }} {{ plane.model }}</h3>
+            <a ng-href="/plane/{{ plane._id }}">Details</a>
+        </div>
+        <div class="image">
+            <img src="{{ plane.image }}" alt="{{ plane.manufacturer }} {{ plane.model }}">
+        </div>
+        <button class="btn waves-effect waves-light" ng-click="deletePlane(plane._id)">Delete</button>
+    </div>
+</div>

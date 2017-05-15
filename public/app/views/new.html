@@ -1,0 +1,26 @@
+<h3>Create a New Plane</h3>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12 m4">
+                <input type="text" name="manufacturer" ng-model="plane.manufacturer" class="validate">
+                <label for="manufacturer">Manufacturer:</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <input type="text" name="model" ng-model="plane.model" class="validate">
+                <label for="model">Model:</label>
+            </div>
+            <div class="input-field col s12 m4">
+                <input type="text" name="engines" ng-model="plane.engines" class="validate">
+                <label for="engines">Engines:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" name="image" ng-model="plane.image" class="validate">
+                <label for="image">Image Url:</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" ng-click="newPlane()">Add Plane</button>
+    </form>
+</div>
